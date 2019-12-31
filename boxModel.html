@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model</title>
+    <style>
+        .pink{
+            background-color:pink;
+            color:white;
+            height:100px;
+            width:auto;
+        }
+        .turquoise{
+            background-color: turquoise;
+            color: white;
+            height: 100px;
+            width:700px;
+        }
+        .yellow{ 
+            background-color: yellow;
+            color:black;
+            height: 100px;
+            width: auto;
+            border-style: dotted;
+            border-color: tomato;
+        }
+        .red{ 
+            background-color: red;
+            color:white;
+            height: 100px;
+            width: 500px;
+            border-style: solid;
+            border-color:black;
+            padding: 30px;
+        }
+        .favorite{
+            font-style:italic;
+            background-color:black;
+        }
+    
+    </style>
+    </head>
+    <body>
+        <div class="pink">
+            <p>Pink</p>
+            <p>The center of the box model is the contents of the div. Note the space between the pink and turquois boxes. This is the margin of 16 px that comes by default with a paragraph aka p element.</p>
+        </div>
+        <div class="turquoise">
+            <p>Turquoise</p>
+            <p>The padding is the distance between the content and the border. The border is invisible because it has not been created. There is no padding here as shown by the fact that the text goes right to the edge.</p>
+        </div>
+        <div class="yellow">
+            <p>Yellow</p>
+            <p>The border is what you see in red. It has been given a dotted style. Again, notice that there is no padding. Also notice that the default margin is no longer there. I'll need to research that, but I would guess that the default is null when a border is added.</p>
+        </div>
+        <div class="red">
+            <p>Red</p>
+            <p>This has been given a solid black border. This has also been given padding as shown by the fact that there is space between the text and the border.  </p>
+        </div>
+
+
+
+
+
+    </body>
+</html>

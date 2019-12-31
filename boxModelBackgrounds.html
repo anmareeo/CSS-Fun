@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model Backgrounds</title>
+    <style>
+        .pink{
+            background-color:pink;
+            color:white;
+            height: 15px;
+            width:auto;
+            padding: 10px;
+            border: 10px gray dotted;
+            margin: 20px;
+        }
+        .turquoise{
+            background-color: turquoise;
+            color: white;
+            height: 10px;
+            width:auto;
+            padding: 10px 30px 11px 100px;
+            border: 5px black ridge;
+            border-radius: 40px;
+            margin: 50px;
+        }
+        .yellow{ 
+            background-image: url (./images/snowflakes.png);
+            color:black;
+            height: 200px;
+            width: auto;
+            padding: 10px 10px;
+            border-width: 20px;
+            border-color: purple;
+            border-style: double;
+            margin: 0px 10px 80px 100px;
+        }
+
+        
+
+        p{
+            margin: 0px;
+     
+        }
+        
+    
+    </style>
+    </head>
+    <body>
+        <h2>The styles have changed to make each box look better.</h2>
+        <div class="pink">
+            <p>Pink - This has a margin of 20px on each side. This means it is 20 pixels away from any other divs within the body. I changed the height of the div to leave more margin space.</p>
+
+        </div>
+        <div class="turquoise">
+            <p>Turquoise - This has a margin of 50 px on all sides. Note that the top will be 50px plus the 20px from the bottom of the Pink div above it.</p>
+        </div>
+        <div class="yellow">
+            <p>Yellow - This has margins of different sizes using the syntax - margin: 0px 10px 80px 100px; note that since the top margin is 0px, it will only take on the 50px from the bottom of the Turquoise div above it. </p>
+        </div>
+        <div class="red">
+            <p>Red - The margins here have the same at the top and bottom and the same on the left and right, using the syntax of margin: 10px 500px. Again, note that the top margin is only 10px, but it takes on the bottom margin of 100px from the yellow div above it.</p>
+        </div>
+      
+
+    </body>
+</html>

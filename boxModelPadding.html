@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model Padding</title>
+    <style>
+        .pink{
+            background-color:pink;
+            color:white;
+            height: 100px;
+            width:auto;
+            padding: 40px;
+        }
+        .turquoise{
+            background-color: turquoise;
+            color: white;
+            height: 100px;
+            width:700px;
+            padding: 10px 30px 50px 200px
+        }
+        .yellow{ 
+            background-color: yellow;
+            color:black;
+            height: 50px;
+            width: auto;
+            padding: 100px 10px;
+        }
+
+        p{
+            margin: 0px;
+        }
+
+        
+    
+    </style>
+    </head>
+    <body>
+        <div class="pink">
+            <p>Pink - This has been given a height of auto to see the margins clearly. This has been given a padding of 40px on all sides using the syntax of padding: 40px. I add this ________ __________________extra sentence so... that the text will reach the right border, and you can see the even sizes of each side, kind of. There is more space at the bottom because there is not enough text to reach the start of the padding.</p>
+        </div>
+        <div class="turquoise">
+            <p>Turquoise - This has a height of 100px. This has different padding for each of the four sides, using this syntax: padding: 10px 30px 50px 200px. It starts at the top and goes clockwise, which is why you can see that there is more space to the left of the text. The last number, which represents the left side is far higher that the others.</p>
+        </div>
+        <div class="yellow">
+            <p>Yellow - This padding was set using another type of syntax where the first number is for the top and bottom and the second number is for the left and right. padding: 100px 10px. Also, note that the height of the yellow box was coded at 50 px and the height of the turquoise box was coded at 100px. The reason the yellow box is taller is because of the padding. The padding will add to the height and width of the div/box and the height and width of the content/text. In closing, note that each box/color shows a different way to add padding to meet your needs. Just remember that if you want different padding on each side, the order starts at the top and goes clockwise....top, right, bottom, left.</p>
+        </div>
+      
+
+    </body>
+</html>

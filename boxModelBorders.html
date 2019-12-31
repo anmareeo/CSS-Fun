@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model Borders</title>
+    <style>
+        .pink{
+            background-color:pink;
+            color:white;
+            height: 100px;
+            width:auto;
+            padding: 10px;
+            border: 10px ridge
+        }
+        .turquois{
+            background-color: turquoise;
+            color: white;
+            height: 30px;
+            width:auto;
+            padding: 10px 30px 50px 200px;
+            border: 5px blue dotted;
+            border-radius: 40px;
+        }
+        .yellow{ 
+            background-color: yellow;
+            color:black;
+            height: 50px;
+            width: auto;
+            padding: 20px 10px;
+            border-width: 2px 20px 5px 10px;
+            border-color: gold purple turquoise red;
+            border-style: solid groove double dashed;
+        }
+
+        .red{ 
+            background-color: red;
+            color:black;
+            font-size: 14px;
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            border-width: 10px 10px;
+            border-color: yellow turquoise;
+            border-style: solid dashed;
+            border-radius: 180px;
+        }
+
+
+        p{
+            margin: 0px;
+            background-color: paleturquoise;
+        }
+        
+    
+    </style>
+    </head>
+    <body>
+        <div class="pink">
+            <p>Pink - To more easily show the content, padding and border, I have styled the p element to have a background color of blue on all three boxes. The content is what is between the p element tags. The padding is shown by the original color of the box/the name of the box. I have now added a border with this syntax- border: 10px ridge. The first is the size of the border, the second is the style. Please note that if no color is selected after the size, the default color will be grey. There is no default style, so if you try to create a border with only a size and a color, you will see nothing. A border style must be selected in order for anything to show up.</p>
+        </div>
+        <div class="turquois">
+            <p>Turquois - I have now added a border with this syntax- border: 5px blue dotted. The first is the size of the border, the second is the color, and the third is the style. I also used border-radius to round the corners a bit. The higher the px, the more rounded the corners.</p>
+        </div>
+        <div class="yellow">
+            <p>Just as with the padding, we can select different border sizes, colors and styles on each side. The syntax- border-width: 2px 20px 5px 10px. border-color: gold purple turquoise red;
+                border-style: solid groove double dashed; Again it starts at the top and goes clockwise. Note that I did decrease the padding here to more easily show the border styles and colors</p>
+        </div>
+        <div class="red">
+            <p>Here I have used the syntax that includes two parameters where the first defines the top and bottom and the second defines the left and right. I have also used a really high radius number and made the height and width the same to turn the box into a circle. I also decreased the font size so the text would fit better.</p>
+        </div>
+      
+
+    </body>
+</html>

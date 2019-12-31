@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Box Model Outline</title>
+    <style>
+        .pink{
+            background-color:pink;
+            color: black;
+            height: 100px;
+            width:auto;
+            padding: 10px;
+            border: 10px ridge;
+            outline-style: dashed;
+            outline-color: purple;
+            outline-width: thin;
+            
+        }
+        .turquoise{
+            background-color: turquoise;
+            color: black;
+            height: 30px;
+            width:auto;
+            padding: 10px 30px 50px 200px;
+            border: 5px blue dotted;
+            border-radius: 40px;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thick;
+        }
+        .yellow{ 
+            background-color: yellow;
+            color:black;
+            height: 50px;
+            width: auto;
+            padding: 20px 10px;
+            border-width: 2px 20px 5px 10px;
+            border-color: gold purple turquoise red;
+            border-style: solid groove double dashed;
+            outline-style: dotted;
+            outline-color: black;
+            outline-width: thick;
+        }
+
+        .red{ 
+            background-color: red;
+            color:black;
+            height: 200px;
+            width: 200px;
+            padding: 50px;
+            border-width: 10px 10px;
+            border-color: yellow turquoise;
+            border-style: solid dashed;
+            border-radius: 180px;
+            outline-style: solid;
+            outline-color: gray;
+            outline-width: thick;
+        }
+
+
+        p{
+            margin: 0px;
+            
+        }
+        
+    
+    </style>
+    </head>
+    <body>
+        <div class="pink">
+            <p>Pink - For all of the colors I have simply added outlines of various colors, styles and widths. Note that the outline does not add to the height or width of the div like the border does. That is why you will notice some overlap. Also note that the outline stays in the box shape even on those with rounded corners.</p>
+        </div>
+        <div class="turquoise">
+            <p>Turquoise</p>
+        </div>
+        <div class="yellow">
+            <p>Yellow</p>
+        </div>
+        <div class="red">
+            <p>Red</p>
+        </div>
+      
+
+    </body>
+</html>
