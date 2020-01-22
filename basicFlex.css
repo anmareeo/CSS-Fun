@@ -1,0 +1,34 @@
+ /* ensure that the dimensions of any box includes its border and padding, so we have an easy way of sizing our elements. This can be done using the box-sizing: border-box. This will make it so it includes the padding and border. Use the * to select all elements */
+
+* {
+    box-sizing: border-box;
+}
+
+/* style the container */
+/* since the container below has a fixed height, the divs will overflow under the container,but we want to keep the height for now because it will be important when we make the divs inside flexible. */
+.container{
+    background-color: gray;
+    height: 200px; 
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+/* style divs inside the container, by using the .container > div */
+/* if we want the divs to be laid out horizontally, side by side. We can make them float to the left by using the float property and applying it to all the divs below--float: left. Then each element will take as much width as it needs to fit its content, and the remaining space will stay empty. If the container can't fit all elements horizontally, the ones at the end will be pushed to a new line. lines also take as much height is needed to fit the boxes inside them. And the remaining space underneath will stay empty. */
+/* if you want no empty space, or if you want to make sure your boxes are centered with equal spaces on the sides, get rid of the float property and convert the container to a flexbox by using display: flex. This will make the children divs line up vertically in an inline way, side by side, and they take up the full height of the container, but they only take as much width as needed to fit their inner content. And the title of each div is centered at the top. If you want all the divs to be of equal width, you can set the width of each div to be the same. */
+/* if we reduce the width of the container to the point where it can't fit the divs, the divs will just overflow to the right. We can avoid that by wrapping them inside the container using flex-wrap: wrap. Use flex-wrap: wrap-reverse if you want the divs to appear in reverse order.That will create a new line when the container is not long enough to hold all divs. And this will allow you to add more divs, and the height of the divs will change to ensure they all fit in the container. The container height will not change if the height has been set. By default the children inside the container(divs) will adjust their height within the parent (container). Once there are too many to fit inside the container, the divs will overflow out of the container. That is the default, but that can be changed.
+/* Using the flex-direction property, you can change the direction in which the divs appear in the box. The default flex direction is "row" which will make the divs appear in the container from left to right (aligned to the left), but you can change it to flex-dirction: row-reverse (with columns, you just use column-reverse), and then the divs will appear in the container from right to left (aligned to the right). You can also use flex-direction:column to put them into columns--however many are needed to fit the divs within the container. Changing the height or width of the actual container can affect how many rows or columns the divs are divided into. The greater the height, the fewer the columns. The boxes(divs) will take the full width of the column by default. */
+/* without the flex-wrap property, the boxes would stack one on top of the other, and overflow out of the container. */
+
+
+.container > div{
+    background-color:gainsboro;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    margin: 1px;
+    border: 3px navy solid;
+    
+}

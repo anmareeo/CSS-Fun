@@ -1,0 +1,181 @@
+<!DOCTYPE <!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic Flexbox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="basicFlex.css">
+    </head>
+    <body>
+
+        <!-- To align items inside a flexbox--two ways. You can align items or flex items inside a row or column OR you can align a row or a column inside the whole flexbox. -->
+        <!-- row aligns horizontally, and column is vertically -->
+
+     <!--To align flex items inside a row or column -->
+
+<style>
+     * {
+        box-sizing: border-box;
+    }
+
+    .container{
+        background-color: gray;
+        height: 200px; 
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+/* justify-content: center will make sure the colums are always centered in the container. */
+    .container > div{
+        background-color:gainsboro;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        margin: 1px;
+        border: 3px navy solid;
+    }   
+</style>
+<h3>Row, Space Around</h3>
+            <div class="container">
+                <div id="pink">Pink</div>
+                <div id="turquoise">Turquoise</div>
+                <div id="yellow">Yellow</div>
+                <div id="red">Red</div>
+                <div id="purple">Purple</div>
+                <div id="green">Green</div>
+                
+            </div>
+        <script src="" async defer></script>
+    </body>
+</html>
+
+<!-- the size of the flex items is always going to be the minimum size they need to fit their content. Justify-content: flex-start will push the items to align left. Flex-end will align right. Another way to use justify-content: space-around. That will put equal space on each side of the div, so the space between the divs will add with the space of the div next to it to double that space. This means that the columns on the end will have half the space because there is no div to the right or left of it.-->
+
+<!--Justify-contents: space-between will distribute the columns evenly without space on the first and last. -->
+
+<style>
+    * {
+       box-sizing: border-box;
+   }
+
+   .container1{
+       background-color: pink;
+       height: 200px; 
+       margin: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+       
+   }
+/* justify-content: center will make sure the colums are always centered in the container. */
+   .container1 > div{
+       background-color:gainsboro;
+       color: magenta;
+       text-align: center;
+       padding: 20px;
+       margin: 1px;
+       border: 3px purple solid;
+   }   
+</style>
+<h3>Row, Space Between</h3>
+           <div class="container1">
+               <div id="pink">Pink</div>
+               <div id="turquoise">Turquoise</div>
+               <div id="yellow">Yellow</div>
+               <div id="red">Red</div>
+               <div id="purple">Purple</div>
+               <div id="green">Green</div>
+               
+           </div>
+       <script src="" async defer></script>
+   </body>
+</html>
+
+<!--Justify-contents: space-between will distribute the columns evenly without space on the first and last. -->
+
+<style>
+    * {
+       box-sizing: border-box;
+   }
+
+   .container2{
+       background-color: pink;
+       width: 500px; 
+       margin: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: flex-start;
+   }
+/* justify-content: center will make sure the colums are always centered in the container. */
+/* align-items: other options are center, flex-end, stretch. */
+   .container2 > div{
+       background-color:gainsboro;
+       color: magenta;
+       text-align: center;
+       padding: 20px; 
+       margin: 1px;
+       border: 3px purple solid;
+   }   
+</style>
+<h3>Align Items Horizontally in their Columns</h3>
+           <div class="container2">
+               <div id="pink">Pink</div>
+               <div id="turquoise">Turquoise</div>
+               <div id="yellow">Yellow</div>
+               <div id="red">Red</div>
+               <div id="purple">Purple</div>
+               <div id="green">Green</div>
+               
+           </div>
+       <script src="" async defer></script>
+   </body>
+</html>
+
+<style>
+    * {
+       box-sizing: border-box;
+   }
+
+   .container3{
+       background-color: pink;
+       height: 200px; 
+       margin: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       justify-content: flex-end; 
+       align-items: space-around;
+       align-content: flex-start;
+       
+   }
+/* justify-content: center will make sure the colums are always centered in the container. */
+   .container3 > div{
+       background-color:gainsboro;
+       color: magenta;
+       text-align: center;
+       padding: 20px;
+       margin: 1px;
+       border: 3px purple solid;
+   }   
+</style>
+<h3>Align Items Horizontally in their Columns</h3>
+           <div class="container3">
+               <div id="pink">Pink</div>
+               <div id="turquoise">Turquoise</div>
+               <div id="yellow">Yellow</div>
+               <div id="red">Red</div>
+               <div id="purple">Purple</div>
+               <div id="green">Green</div>
+               
+           </div>
+       <script src="" async defer></script>
+   </body>
+</html>
